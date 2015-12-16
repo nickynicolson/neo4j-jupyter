@@ -93,7 +93,7 @@ def draw(graph, options, physics=False, limit=100):
 
         for key, value in node.properties.items():
             key = key.encode("utf8")
-            value = value.encode("utf8") if type(value) is unicode else value
+            value = value.encode("utf8") if type(value) is str else value
 
             title[key] = value
 
